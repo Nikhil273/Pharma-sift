@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+  font-family: 'Ubuntu', sans-serif;
+}.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo-img{
+  height:3rem;
+}
+.nav{
+  display: flex;
+  gap:2rem;
+  font-size: 1.3rem;
+  
+}
+.nav-link{
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(40, 36, 36);
+  
+}
+.action-button{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:3rem;
+  width: 7.25rem;
+  background-color: rgb(0, 99, 79);
+  border-radius: 0.25rem;
+}
+.contact-button{
+  text-align: center;
+  color: white;
+  font-size:1.2rem;
+  text-decoration: none;
+}
+.content-center{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 648px) {
+  .nav{
+    display: none;
+  }
+  .action-button{
+    display: none;
+  }
+}
+.hero-tittle{
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  line-height: 4rem;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .hero-tittle{
+    width: 50%;
+    text-align: center;
+    
+    margin-top: 3.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+.hero-button{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:3rem;
+  width: 10rem;
+  background-color: rgb(0, 99, 79);
+  border-radius: 0.25rem;
+  margin-top: 3rem;
+}
+.start-button{
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.main-section{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .section-heading{
+    margin-top: 0rem;
+    font-size: 1rem;
+  }
+
+.directiom-svg{
+  display: none;
+}
+}
+
+
+.section-heading{
+  margin-top: 5rem;
+  font-size: 2.5rem;
+}
+span{
+  color:  rgb(0, 99, 79);
+}
+.section-text{
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+#searchInput{
+  width: 70%;
+  height: 2rem;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: .35rem;
+  border: 0.5px solid rgb(152, 152, 152);
+}
+.foot-img{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.directiom-svg{
+  display: none;
+  height: 10rem;
+  position: relative;
+  left: 30rem;
+  top:3rem;
+}
+.search-button{
+  margin-top: 1rem;
+  color: white;
+  height:3rem;
+  width: 7.25rem;
+  background-color: rgb(0, 99, 79);
+  border-radius: 0.25rem;
+  border: none;
+}
+#suggestions{
+  width: 70%;
+  font-size: large;
+  position: relative;
+  top: -55px;
+ 
+}
+#medicineInfo{
+  background-color: rgba(221, 226, 226, 0.763);
+  width: 70%;
+  margin: 2rem;
+}
