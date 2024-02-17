@@ -7,8 +7,8 @@
       // Add more medicine data as needed
   ];
   const compareMedicines = [
-    { name: "Paracetamol", price: 10, quantity: 100 },
-    { name: "kl", price: 10, quantity: 200 },
+    { name: "Paracetamol", price: 104, quantity: 100 },
+    { name: "kl", price: 15, quantity: 200 },
     { name: "Medicine C", price: 15, quantity: 120 }
     // Add more medicine data as needed
 ];
@@ -62,6 +62,7 @@
         // Display medicine information from the main medicines array
         filteredMedicines.forEach(medicine => {
             const medicineInfo = document.createElement("div");
+            medicineInfo.setAttribute("id", "medi-info- div ");
             medicineInfo.innerHTML = `
                 <h2>${medicine.name}</h2>
                 <p>Price: $${medicine.price}</p>
@@ -77,11 +78,12 @@
             if (matchingCompareMedicines.length > 0) {
                 // Display medicine information from the compareMedicines array
                 const compareMedicineInfoDiv = document.createElement("div");
-                compareMedicineInfoDiv.innerHTML = "<h3>Comparison:</h3>";
+                // compareMedicineInfoDiv.innerHTML = "<h3>Comparison:</h3>";
                 matchingCompareMedicines.forEach(compareMedicine => {
                     const compareMedicineInfo = document.createElement("div");
+                    compareMedicineInfo.setAttribute("id", "com-medi-div ");
                     compareMedicineInfo.innerHTML = `
-                        <h4>${compareMedicine.name}</h4>
+                        <h2>${compareMedicine.name}</h2>
                         <p>Price: $${compareMedicine.price}</p>
                         <p>Quantity: ${compareMedicine.quantity}</p>
                     `;
